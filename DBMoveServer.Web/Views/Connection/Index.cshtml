@@ -1,0 +1,54 @@
+﻿@using DBMoveServer.Transfer.Model
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script type="text/javascript" src="~/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+    function conntextTest() {
+
+        jQuery('<form action="transfer" method="post">' +  // action请求路径及推送方法
+            '<input type="text" name="connection" value="' + $("#txtConnectA").val() + '"/>' +
+            '<input type="text" name="sourcedb" value="' + $("#selSource").val() + '"/>' +
+            '<input type="text" name="targetdb" value="' + $("#selTarget").val() + '"/>' +
+            '</form>')
+            .appendTo('body').submit().remove();
+    }
+</script>
+
+<div>
+    <table>
+        <tr>
+            <td>源库</td>
+            <td>
+                <select id="selSource">
+                    @{ 
+                        foreach (DatabaseType item in Enum.GetValues(typeof(DatabaseType)))
+                        {
+                            <option value="@((int)item)">@item.ToString()</option>
+                        }
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>源连接</td>
+            <td><input id="txtConnectA" type="text" style="width: 300px;" /></td>
+        </tr>
+        <tr>
+            <td>目标库</td>
+            <td>
+                <select id="selTarget">
+                    @{
+                        foreach (DatabaseType item in Enum.GetValues(typeof(DatabaseType)))
+                        {
+                            <option value="@((int)item)">@item.ToString()</option>
+                        }
+                    }
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="button" value="生成Sql文件" onclick="javascript: conntextTest();" />
+</div>
