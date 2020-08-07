@@ -13,6 +13,8 @@ namespace DBMoveServer.Transfer.Model
 
         public TableInfo Table { get; set; }
 
+        public string IndexName => $"index_{IndexKeys.Replace(",", "_").Replace(" ", string.Empty)}_{Table.Name}";
+
         public override string ToString()
         {
             return IndexType + IndexKeys;

@@ -30,7 +30,8 @@ namespace DBMoveServer.Transfer
             targetServerDic = new Dictionary<DatabaseType, Func<ITargetServer>>()
             {
                 { DatabaseType.PostgreSql, () => { return new TargetPostgreServer(); } },
-                { DatabaseType.MySql, () => { return new TargetMysqlServer(); } }
+                { DatabaseType.MySql, () => { return new TargetMysqlServer(); } },
+                { DatabaseType.SqlServer, () => { return new TargetMSServer(); } }
             };
         }
 

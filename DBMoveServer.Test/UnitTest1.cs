@@ -21,8 +21,8 @@ namespace DBMoveServer.Test
             TransferRequest tr = new TransferRequest()
             {
                 Connection = "Server=10.10.10.134;Port=5432;Database=bmapidb_test;User ID=apiuser;Password=7LMg104uwFmY;pooling=true;",
-                SourceDB = DatabaseType.SqlServer,
-                TargetDB = DatabaseType.PostgreSql
+                SourceDB = DatabaseType.PostgreSql,
+                TargetDB = DatabaseType.SqlServer
             };
 
             helper.CreateTables(tr);
