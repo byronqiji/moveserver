@@ -1,9 +1,12 @@
-﻿using DBMoveServer.Transfer;
+﻿using DBMoveServer.LogUtility;
+using DBMoveServer.Transfer;
+using log4net.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace DBMoveServer
 {
@@ -12,6 +15,7 @@ namespace DBMoveServer
         public Startup(IConfiguration configuration)
         {
             AppConfiguration.Instance.Init(configuration);
+            XmlConfigurator.Configure(LoggerFactory.Repository, new FileInfo("log4net.config"));
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.

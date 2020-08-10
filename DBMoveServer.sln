@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMoveServer.Web", "DBMoveS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMoveServer.Database", "DBMoveServer.Database\DBMoveServer.Database.csproj", "{7D88D9E0-82CA-40EF-828B-765E3442ADD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMoveServer.Transfer", "DBMoveServer.Transfer\DBMoveServer.Transfer.csproj", "{BDEBF8F3-488F-4147-8174-B14440FFE4D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMoveServer.Transfer", "DBMoveServer.Transfer\DBMoveServer.Transfer.csproj", "{BDEBF8F3-488F-4147-8174-B14440FFE4D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMoveServer.Test", "DBMoveServer.Test\DBMoveServer.Test.csproj", "{D74EA453-8F20-4082-BEE3-E4A49D2D6B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMoveServer.Test", "DBMoveServer.Test\DBMoveServer.Test.csproj", "{D74EA453-8F20-4082-BEE3-E4A49D2D6B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMoveServer.LogUtility", "DBMoveServer.LogUtility\DBMoveServer.LogUtility.csproj", "{086E7ED8-436D-4705-968A-63A64DB0E26A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D74EA453-8F20-4082-BEE3-E4A49D2D6B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D74EA453-8F20-4082-BEE3-E4A49D2D6B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D74EA453-8F20-4082-BEE3-E4A49D2D6B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086E7ED8-436D-4705-968A-63A64DB0E26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086E7ED8-436D-4705-968A-63A64DB0E26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086E7ED8-436D-4705-968A-63A64DB0E26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086E7ED8-436D-4705-968A-63A64DB0E26A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

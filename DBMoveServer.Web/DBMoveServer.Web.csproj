@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DBMoveServer.Database\DBMoveServer.Database.csproj" />
+    <ProjectReference Include="..\DBMoveServer.LogUtility\DBMoveServer.LogUtility.csproj" />
     <ProjectReference Include="..\DBMoveServer.Transfer\DBMoveServer.Transfer.csproj" />
   </ItemGroup>
 
